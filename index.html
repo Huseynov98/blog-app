@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <title>Blog app</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+        <h2 class="title">Приложение блог</h2>
+        <div class="row">
+            <div class="col">
+                <div class="new__post">
+                    <h2>Новый пост</h2>
+                    <input id="postTitleInput"
+                    class="post__item input" 
+                    type="text"  
+                    placeholder="Заголовок">
+                    <p id="titleCharCountWrapper" class="input__count-wrapper">
+                        Осталось<span id="titleCharCount"></span>символов</p>
+                    <textarea 
+                    id="postTextInput" 
+                    class="post__item input" 
+                    type="text"  
+                    placeholder="Напиши пост"></textarea>
+                    <p id="textCharCountWrapper" class="input__count-wrapper">
+                        Осталось<span id="textCharCount"></span>символов</p>
+                    <button 
+                    id="publicationBtn"  
+                    class="publication__btn" 
+                    type="button">Опубликовать</button>
+                </div>
+            </div>
+            <div class="col">  
+                <h2>Лента</h2>
+                <div id="feedList" class="post__section">
+                    <div id="posts" class="posts">
+                        Лента пуста...
+                    </div>
+                </div>
+            </div>
+       </div>
+    </div>
+    </div>
+    <script src="./JS/main.js"></script>
+</body>
+</html>
